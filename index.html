@@ -6,21 +6,30 @@
     <meta name="keywords" content="html,css,cours,Gor">
     <meta name="description" content="здесь мы изучаем html">
     <title>Гор Мкртчян</title>
+    <link rel="stylesheet" href="selector.css">
 </head>
 <body>
-    <img src="photo1698514289.jpeg" alt="здесь моя аватарка" width="170">
-    <h1>Гор Мкртчян</h1>
-    <p>Я живу в <strong>Армении,в городе Ереван.</strong> 10 октября мне исполнилось <strong>17 лет</strong></p>
-    <p>Я люблю <em>заниматься спортом,прогроммировать,и люблю путешествовать</em></p>
-    <h2>список социальных сетей։</h2>
-    <p>
-        <a href="https://t.me/vvvvv0000777" target="_blank">telegram</a>|<a href="https://www.instagram.com/gor_00.6/" target="_blank">instagram</a>
-    </p>
+    <div class="cont">
+    <div class="info">
+        <img src="photo1699034902.jpeg" alt="здесь моя аватарка" class="avatar">
+        <div class="info-text">
+            <h1>Гор Мкртчян</h1>
+            <div class="fort">
+            <p>Я живу в <strong>Армении,в городе Ереван.</strong> 10 октября мне исполнилось <strong>17 лет</strong></p>
+            <p>Я люблю <em>заниматься спортом,прогроммировать,и люблю путешествовать</em></p>
+            </div>
+            <h2>список социальных сетей։</h2>
+            <p>
+                <a href="https://t.me/vvvvv0000777" target="_blank">telegram</a>|<a href="https://www.instagram.com/gor_00.6/" target="_blank">instagram</a>
+            </p>
+        </div>
+    </div>
+    <div class="card-1">
     <h2>Мои Хобби։</h2>
      <ol>
         <li>
             заниматься спортом
-            <ul>
+            <ul class="ul1">
                 <li>ходить в зал</li>
                 <li>бегать</li>
             </ul>
@@ -29,16 +38,17 @@
         <li>изучать для себя новое</li>
         <li>гулять</li>
      </ol>
-
+    </div>
+    <div class="card-2">
      <h2>Опыт Работы։</h2>
-     <table>
-        <thead>
+     <table class="table">
+        <!-- <thead>
             <tr>
                 <th>название</th>
                 <th>должность</th>
                 <th>год</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
             <tr>
                 <td>Five</td>
@@ -47,30 +57,43 @@
             </tr>
             
             <tr>
-                <td>marriott</td>
+                <td>Marriott</td>
                 <td>охранник</td>
                 <td>2022-2023</td>
             </tr>
         </tbody>
      </table>
+    </div>
+    <div class="card-3">
+        <h2>Мои Курсы:</h2>
+        <ul class="ul2">
+            <li><a href="https://lk.result.school/teach/control/stream/view/id/766481145" target="_blank">Основы JavaScript 2023</a></li>
+            <li><a href="https://lk.result.school/teach/control/stream/view/id/695281059" target="_blank">Профессия Джуниор Frontend-разработчика</a></li>
+        </ul>
+    </div>
      <hr>
 
-     <h2>Связаться самной</h2>
-     <div>
-        <label for="text">Ввидите ваше имя</label>
-        <input type="text" id="text" placeholder="ваше имя">
-     </div>
-     <div>
-        <label for="email">Ввидите ваш Email</label>
-        <input type="email" id="email" placeholder="ваше Email">
-     </div>
-     <div>
-        <label for="massage">Ввидите ваше сообщение</label>
-        <br>
-        <textarea id="massage" cols="30" rows="5" placeholder="Ввидите сообщение...."></textarea>
-     </div>
-     <button type="submit">Отправить!</button>
-
+     
+     <form action="/" class="form">
+        <h2>Связаться самной</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="text">Ввидите ваше имя</label>
+                <input type="text" id="text" placeholder="ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Ввидите ваш Email</label>
+                <input type="email" id="email" placeholder="ваше Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="massage">Ввидите ваше сообщение</label>
+            <br>
+            <textarea id="massage" cols="30" rows="5" placeholder="Ввидите сообщение...."></textarea>
+        </div>
+            <button type="submit">Отправить!</button>
+        </div>
+    </form>
 </body>
 </html>
 
